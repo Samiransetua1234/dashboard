@@ -1,7 +1,4 @@
 import DashBoard from "./pages/dashboard"
-// import { Provider } from "react-redux"
-// import { store } from "./redux_stor/store"
-
 
 function App() {
  

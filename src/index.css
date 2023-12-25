@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.dateEdit:required:invalid::-webkit-datetime-edit {
+    color: transparent;
+}

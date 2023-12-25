@@ -1,5 +1,5 @@
-// ChartGen.jsx
 import React from "react";
+import { Chart as Chartjs } from "chart.js/auto";
 import { Chart } from "react-chartjs-2";
 import { setType } from "../redux_stor/features/ChartSlice";
 import { useDispatch } from "react-redux";
@@ -8,13 +8,13 @@ const ChartGen = ({ type, data, id }) => {
   const dispatch = useDispatch();
 
   return (
-    <div className="w-full md:w-full lg:w-[45%] h-96  flex flex-col gap-2 items-center">
+    <div className=" w-[100%] md:w-[95%] lg:w-[40%] h-80 flex flex-col gap-2 items-center ">
       <form className="w-full">
         <label
           htmlFor="services"
-          className="bg-white flex py-1 flex-col justify-center items-center px-3 rounded-lg w-full"
+          className="  bg-white flex py-1 flex-col justify-center items-center px-3 rounded-lg w-full"
         >
-          <span className="my-1 font-bold text-slate-400 text-sm">
+          <span className="my-1 font-bold text-slate-400 text-sm  ">
             Chart Type
           </span>
           <select
@@ -31,7 +31,7 @@ const ChartGen = ({ type, data, id }) => {
           </select>
         </label>
       </form>
-      <Chart type={type} data={data} className="h-full w-full overflow-auto" />
+      <Chart type={type} data={data} className="h-full overflow-auto w-full " />
     </div>
   );
 };

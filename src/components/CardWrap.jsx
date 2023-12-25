@@ -1,7 +1,7 @@
 import React from 'react'
 import Card from './Card'
 import{useSelector} from 'react-redux'
-import { FaPercent } from "react-icons/fa";
+
 const CardWrap = () => {
     const state = useSelector(state => state.card_data.cards)
     

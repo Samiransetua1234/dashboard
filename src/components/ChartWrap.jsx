@@ -16,6 +16,7 @@ const ChartWrap = () => {
             id={data.id}
             data={data.data}
           />
+      
         );
       })}
     </div>
